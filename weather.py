@@ -1,7 +1,7 @@
 import requests
 
 def get_weather(city):
-    api_key = "70e65efa024641dda971032822a037c1"
+    api_key = "2f2485aad55cc303afa0b81c0e8fd1f0"
     base_url = "http://api.weatherstack.com/current"
     params = {"access_key": api_key, "query": city, "units": "m"}
     

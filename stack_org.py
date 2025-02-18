@@ -1,14 +1,14 @@
 import os
 import shutil
 
-# Define file categories
+
 FILE_CATEGORIES = {
     "Images": [".jpg", ".jpeg", ".png", ".gif", ".bmp"],
     "Videos": [".mp4", ".mkv", ".avi", ".mov"],
     "Documents": [".pdf", ".docx", ".txt", ".xlsx", ".pptx"],
     "Audio": [".mp3", ".wav", ".aac"],
     "Archives": [".zip", ".rar", ".tar", ".gz"],
-    "Others": []  # Any uncategorized files
+    "Others": []  
 }
 
 def organize_files(directory):
@@ -29,7 +29,7 @@ def organize_files(directory):
                     moved = True
                     break
             
-            if not moved:  # Move to 'Others' if no category matched
+            if not moved:  
                 move_file(file_path, directory, "Others")
     
     print("File organization complete!")
